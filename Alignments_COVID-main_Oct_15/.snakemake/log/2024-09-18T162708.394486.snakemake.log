@@ -1,0 +1,53 @@
+host: Gabrielas-MacBook-Pro.local
+Building DAG of jobs...
+Using shell: /opt/homebrew/bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                      count
+---------------------  -------
+all                          1
+covid_alignment              1
+generate_bigger_fasta        1
+total                        3
+
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Sep 18 16:27:08 2024]
+localrule generate_bigger_fasta:
+    input: /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000303.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000294.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000307.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000306.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000295.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000308.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000298.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000299.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000305.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000292.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000301.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000296.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000300.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000297.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000304.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000293.fa, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000290_gensam.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000291.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000289_gensam.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000306_gensam.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000307_gensam.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000290.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000305_gensam.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000304_gensam.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000303_gensam.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000293_gensam.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000294_gensam.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000308_gensam.fasta, /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/DC24000295_gensam.fasta
+    output: /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Merged_fasta_files/combined.fasta
+    jobid: 2
+    reason: Missing output files: /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Merged_fasta_files/combined.fasta; Set of input files has changed since last execution
+    resources: tmpdir=/var/folders/c1/rrddrpk93nq3fjqn6bvw77th0000gn/T
+
+[Wed Sep 18 16:27:09 2024]
+Finished job 2.
+1 of 3 steps (33%) done
+Select jobs to execute...
+Execute 1 jobs...
+
+[Wed Sep 18 16:27:09 2024]
+localrule covid_alignment:
+    input: /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Merged_fasta_files/combined.fasta
+    output: /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Merged_fasta_files/alignments_output.txt
+    jobid: 1
+    reason: Missing output files: /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Merged_fasta_files/alignments_output.txt; Input files updated by another job: /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Merged_fasta_files/combined.fasta
+    resources: tmpdir=/var/folders/c1/rrddrpk93nq3fjqn6bvw77th0000gn/T
+
+Terminating processes on user request, this might take some time.
+[Wed Sep 18 16:28:01 2024]
+Error in rule covid_alignment:
+    jobid: 1
+    input: /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Merged_fasta_files/combined.fasta
+    output: /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Merged_fasta_files/alignments_output.txt
+    shell:
+        
+        python3 /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main//COVID_alignment.py /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Merged_fasta_files/combined.fasta /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Merged_fasta_files/alignments_output.txt
+        
+        (one of the commands exited with non-zero exit code; note that snakemake uses bash strict mode!)
+
+Complete log: .snakemake/log/2024-09-18T162708.394486.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.

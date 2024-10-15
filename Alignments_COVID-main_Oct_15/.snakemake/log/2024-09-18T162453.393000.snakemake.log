@@ -1,0 +1,6 @@
+host: Gabrielas-MacBook-Pro.local
+Building DAG of jobs...
+MissingInputException in rule all in file /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Snakefile, line 4:
+Missing input files for rule all:
+    affected files:
+        /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/alignments_output.txt

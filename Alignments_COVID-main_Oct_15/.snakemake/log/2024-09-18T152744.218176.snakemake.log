@@ -1,0 +1,8 @@
+host: Gabrielas-MacBook-Pro.local
+Building DAG of jobs...
+MissingInputException in rule change_name_sequence in file /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Snakefile, line 8:
+Missing input files for rule change_name_sequence:
+    output: /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/renaming_done.txt
+    affected files:
+        /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/*.fa
+        /Users/xdisga/Documents/Python_for_biologists/Alignments_COVID-main/Sequences_Gensam_Ours/*.fasta
