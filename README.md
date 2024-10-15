@@ -57,7 +57,7 @@ This script filters out duplicate or truncated proteins from the ORFs_output.fas
 
 6. Protein_alignment.py
 
-This script aligns the proteins in the filtered ORFs_output_filtered.fasta file against the NCBI database for SARS-CoV-2 proteins. Note that this alignment may take a long time even with a reduced database. (You can just trucante the script). This part is just to see in the found ORF makes sense.  
+This script aligns the proteins in the filtered ORFs_output_filtered.fasta file against the NCBI database for SARS-CoV-2 proteins. Note that this alignment may take a long time even with a reduced database. (You can just avoid the script). This part is just to see in the found ORF makes sense.  
 
     Modify these paths:
 
